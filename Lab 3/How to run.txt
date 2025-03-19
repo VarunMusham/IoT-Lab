@@ -1,4 +1,10 @@
-gcc -o <execuatble_name> <file_name> -l<libraries_to_use>
+gcc -o <executable_name> <file_name> -l<libraries_to_use>
+./<executable_name>
 
 Example:
-gcc -o retrieve retrieve.c -mqtt3
+gcc -o retrieve retrieve.c -lcurl
+./retrieve
+
+gcc -o upload upload.c -lcurl
+./upload
+
