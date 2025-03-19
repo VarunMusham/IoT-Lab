@@ -1,0 +1,9 @@
+gcc -o <execuatble_name> <file_name> -l<libraries_to_use>
+./<executable_name>
+
+Example:
+gcc -o publish publish.c -lpaho-mqtt3c
+./publish
+
+gcc -o subscribe subscribe.c -lpaho-mqtt3c
+./subscribe
