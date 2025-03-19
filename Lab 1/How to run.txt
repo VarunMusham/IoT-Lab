@@ -1,0 +1,2 @@
+gcc -o <execuatble_name> <file_name> -l<libraries_to_use>
+
