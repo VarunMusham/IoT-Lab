@@ -4,6 +4,8 @@
 
 #define LED_PIN 1  // GPIO18  or PIN12
 
+const int req=333;	// (1/300)*100000
+
 int main(void) {
 	if (wiringPiSetup()==-1){
 		printf("Pin Initialization Failed");
@@ -14,10 +16,10 @@ int main(void) {
 	
 	pwmSetMode(PWM_MODE_MS);
 	pwmSetClock(192);   // Base Frequency
-	pwmSetRange(6667);  // 1.5MHz / 6667 = 300Hz
+	pwmSetRange(req);  
     // Blink the LED
     while (1) {
-		pwmWrite(LED_PIN,3333);
+		pwmWrite(LED_PIN,req/2);
 		usleep(1000000);
     }
 
