@@ -2,6 +2,8 @@ Run only these two files:
 publish.c
 subscribe.c
 
+Ignore sense_hat.py and sense_hat.c
+
 gcc -o <execuatble_name> <file_name> -l<libraries_to_use>
 ./<executable_name>
 
