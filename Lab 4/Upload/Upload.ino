@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <DHT.h>
 
-#define DHTPIN D4  // GPIO2 (D4) on NodeMCU
+#define DHTPIN D2  // GPIO2 (D2) on NodeMCU
 #define DHTTYPE DHT11 // Use DHT22 if required
 DHT dht(DHTPIN, DHTTYPE);
 
