@@ -1,0 +1,31 @@
+Scan for available Networks:
+sudo iwlist wlan0 scan | grep ESSID
+
+
+Edit conf file:
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+
+
+Add details like this:
+network={
+    ssid="your_network_name"
+    psk="your_network_password"
+}
+
+
+Save and then exit
+
+
+Restart Network Internface:
+sudo ifdown wlan0
+sudo ifup wlan0
+
+
+Check connection status:  Look for the inet address under wlan0, which is your Raspberry Pi's IP address on the network.
+ifconfig wlan0
+
+
+
+
+If Necessary, Reboot:
+sudo reboot
