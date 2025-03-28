@@ -1,3 +1,7 @@
+Run only these two files:
+publish.c
+subscribe.c
+
 gcc -o <execuatble_name> <file_name> -l<libraries_to_use>
 ./<executable_name>
 
