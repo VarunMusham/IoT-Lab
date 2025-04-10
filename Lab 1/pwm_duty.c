@@ -16,7 +16,7 @@ int main() {
     // Set PWM frequency: 300 Hz
     pwmSetMode(PWM_MODE_MS);
     pwmSetClock(100);    
-    pwmSetRange(2500);    // Change here for Freq  ((1/1600)/2)*1000000
+    pwmSetRange(2500);    // Change here for Freq  80Hz=((1/2500)*2)*100000
 
     while (1) {
         pwmWrite(GPIO_PIN, 2500/4);  // 50% duty cycle (High for half the time)
