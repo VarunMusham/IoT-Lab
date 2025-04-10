@@ -19,7 +19,7 @@ int main() {
     pwmSetRange(2500);    // Change here for Freq  80Hz=((1/2500)*2)*100000
 
     while (1) {
-        pwmWrite(GPIO_PIN, 2500/4);  // 50% duty cycle (High for half the time)
+        pwmWrite(GPIO_PIN, 2500/4);  // 25% duty cycle (High for half the time)
         //usleep(1000000);           // Wait 1 sec (optional)
     }
 
